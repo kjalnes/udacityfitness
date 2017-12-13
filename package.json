@@ -21,7 +21,6 @@
   "dependencies": {
     "expo": "^23.0.4",
     "react": "16.0.0",
-    "react-native": "0.50.3",
-    "babel-preset-react-native": "2.1.0"
+    "react-native": "0.50.3"
   }
 }

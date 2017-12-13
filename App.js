@@ -7,6 +7,12 @@ import {
 import AddEntry from './components/AddEntry';
 
 export default class App extends Component {
+    // componentDidMount() {
+    //     console.log('Before')
+    //     debugger;
+    //     console.log('After')
+    // }
+
     handlePress = () => {
         alert('hello')
     }
