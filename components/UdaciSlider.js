@@ -1,9 +1,9 @@
 import React from 'react';
-import { Text, View, Slider } from 'react-native';
+import { Text, View, Slider, StyleSheet } from 'react-native';
 
 export default function UdaciSlider({ step, unit, value, max, onChange}) {
     return (
-        <View>
+        <View style={styles.activityDetails}>
             <Slider
                 step={step}
                 value={value}
@@ -19,3 +19,7 @@ export default function UdaciSlider({ step, unit, value, max, onChange}) {
         </View>
     )
 }
+
+
+const styles = StyleSheet.create({
+})

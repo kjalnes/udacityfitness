@@ -19,33 +19,10 @@ export default class App extends Component {
     render() {
         return (
             <Provider store={createStore(reducer)}>
-                <View style={style.container}>
+                <View style={{flex: 1}}>
                     <AddEntry />
                 </View>
             </Provider>
         );
     }
 }
-
-
-const style = StyleSheet.create({
-    container: {
-        flex: 1,
-        marginLeft: 10,
-        marginRight: 10,
-        alignItems: 'center',
-        justifyContent: 'center'
-    },
-    btn: {
-        backgroundColor: '#E53224',
-        padding: 10,
-        paddingLeft: 50,
-        paddingRight: 50,
-        justifyContent: 'center',
-        alignItems: 'center',
-        borderRadius: 5
-    },
-    btnText: {
-        color: '#fff'
-    }
-})
