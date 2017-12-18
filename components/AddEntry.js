@@ -113,12 +113,8 @@ class AddEntry extends Component {
             <View style={styles.container}>
                 <DateHeader date={(new Date()).toLocaleDateString()}/>
                 { Object.keys(metaInfo).map( (key) => {
-                    console.log('key', key)
                     const { getIcon, type, ...rest } = metaInfo[key]
                     const value = this.state[key]
-                    console.log('key', key)
-                    console.log('type', type)
-                    console.log(getIcon())
                     return (
                         <View key={key} style={styles.row} >
                             {getIcon()}
